@@ -5,13 +5,11 @@ function Main() {
         <div className="main">
 
             <div className="container">
-                <div>Content will go here</div>
-                <div>More content will go here</div>
-            </div>
 
-            <div className="code">
-                <div>Code snippets wil go here</div>
-                <div>More code snippets will go here</div>
+                <div className="text">
+                    <div className="major">Welcome! My name is Sebat Mohamed and I love Web Development.</div>
+                    <div className="minor">Check out some of my incredible work and let's connect!</div>
+                </div>
             </div>
 
         </div>
