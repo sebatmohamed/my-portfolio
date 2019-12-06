@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Main from './Components/Main';
+
+import './App.css'
 
 function App() {
     return(
         <div>
-            <h1>Hello World</h1>
+            <Header />
+            <Main />
+            <Footer/>
         </div>
     )
 }
