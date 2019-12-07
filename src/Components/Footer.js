@@ -1,4 +1,5 @@
-import React from 'react';
+import '../../css/footer.css';
+
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
@@ -16,7 +17,7 @@ function Footer() {
             <a href="https://www.linkedin.com/in/sebatm/">
                 <FaLinkedinIn/>
             </a>
-            <a href="https://mail.google.com/">
+            <a href="mailto:sebatbekri@gmail.com">
                 <FaEnvelope/>
             </a>
             

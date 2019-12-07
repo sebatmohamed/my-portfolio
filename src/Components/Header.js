@@ -1,25 +1,25 @@
-import React from 'react'
+import Link from 'next/link';
+
+import '../../css/header.css';
 
 function Header() {
     return(
         <div className="header">
 
             <div className="logo">
-                <a href="/home">
-                    <div>Sebat</div>
-                </a>
+                <a href="http://localhost:3000">Sebat</a>
             </div>
 
             <div className="nav">
-                <a href="/about">
-                    <span>About</span>
-                </a>
-                <a href="/projects">
-                    <span>Projects</span>
-                </a>
-                <a href="/contact">
-                    <span>Contact</span>
-                </a>
+                <Link href="/about">
+                    <a>About</a>
+                </Link>
+                <Link href="/projects">
+                    <a>Projects</a>
+                </Link>
+                <Link href="/contact">
+                    <a>Contact</a>
+                </Link>
             </div>
 
         </div>
