@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
