@@ -1,12 +1,12 @@
 import Header from '../src/Components/Header';
-import Connect from '../src/Components/Conect';
+import ContactPage from '../src/Components/ContactPage';
 import Footer from '../src/Components/Footer';
 
 function Contact() {
     return(
         <div>
             <Header/>
-            <Connect/>
+            <ContactPage/>
             <Footer/>
         </div>
     )

@@ -1,6 +1,6 @@
 import '../../css/contact.css';
 
-function Connect() {
+function ContactPage() {
     return(
         <div>
             <h1>This is where you can contact me</h1>
@@ -8,4 +8,4 @@ function Connect() {
     )
 }
 
-export default Connect
+export default ContactPage

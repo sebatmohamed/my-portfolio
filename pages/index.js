@@ -1,7 +1,6 @@
-import Header from '../src/Components/Header';
-import Main from '../src/Components/Main';
-import Footer from '../src/Components/Footer';
-
+import Header from "../src/Components/Header";
+import Main from "../src/Components/Main";
+import Footer from "../src/Components/Footer";
 
 function Index() {
   return (

@@ -1,12 +1,12 @@
 import Header from '../src/Components/Header';
-import Info from '../src/Components/Info';
+import AboutPage from '../src/Components/AboutPage';
 import Footer from '../src/Components/Footer';
 
 function About() {
     return(
         <div>
             <Header/>
-            <Info/>
+            <AboutPage/>
             <Footer/>
         </div>
     )

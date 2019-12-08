@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.logo a:hover {
+  transform: scale(1.25);
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -45,4 +49,8 @@
   text-shadow: 0 0 8px black;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.nav a:hover {
+  transform: scale(1.25);
 }

@@ -1,5 +1,17 @@
 import '../../css/home.css';
 
+const background = {
+    top: "50%",
+    left: "50%",
+    filter: "blur(16px)",
+    overflow: "hidden",
+    position: "fixed",
+    minWidth: "110%",
+    transform: "translateX(-50%) translateY(-50%)",
+    minHeight: "110%",
+    zIndex: -1
+}
+
 function Main() {
     return(
         <div className="main">
@@ -12,6 +24,14 @@ function Main() {
                 </div>
                 
             </div>
+
+            <div>
+                <img
+                    src="https://media0.giphy.com/media/1oF1KAEYvmXBMo6uTS/giphy.gif"
+                    style={background}
+                />
+            </div>
+
 
         </div>
     )

@@ -1,6 +1,6 @@
 import '../../css/about.css'
 
-class Info extends React.Component {
+class AboutPage extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -54,4 +54,4 @@ class Info extends React.Component {
   }
 }
 
-export default Info;
+export default AboutPage;
