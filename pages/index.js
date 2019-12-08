@@ -4,7 +4,7 @@ import Footer from '../src/Components/Footer';
 
 import '../css/reset.css';
 
-function Home() {
+function Index() {
   return (
     <div>
       <Header />
@@ -14,4 +14,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Index;

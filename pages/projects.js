@@ -1,15 +1,14 @@
 import Header from '../src/Components/Header';
-import Info from '../src/Components/aboutPage/Info';
 import Footer from '../src/Components/Footer';
 
-function About() {
+function Projects() {
     return(
         <div>
             <Header/>
-            <Info/>
+            <h1>This is the prjects page. All my codes will go here and I will use an API</h1>
             <Footer/>
         </div>
     )
 }
 
-export default About
+export default Projects

@@ -1,15 +1,14 @@
 import Header from '../src/Components/Header';
-import Info from '../src/Components/aboutPage/Info';
 import Footer from '../src/Components/Footer';
 
-function About() {
+function Contact() {
     return(
         <div>
             <Header/>
-            <Info/>
+            <h1>This is the contact page. A form might go here or just info</h1>
             <Footer/>
         </div>
     )
 }
 
-export default About
+export default Contact
