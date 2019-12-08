@@ -1,6 +1,5 @@
 import '../../css/about.css'
 
-
 class Info extends React.Component {
   constructor() {
     super();

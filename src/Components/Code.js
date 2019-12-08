@@ -1,3 +1,5 @@
+import '../../css/projects.css';
+
 function Code() {
     return(
         <div>

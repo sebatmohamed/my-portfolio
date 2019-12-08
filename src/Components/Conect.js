@@ -1,3 +1,5 @@
+import '../../css/contact.css';
+
 function Connect() {
     return(
         <div>
