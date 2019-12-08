@@ -1,11 +1,12 @@
 import Header from '../src/Components/Header';
+import Connect from '../src/Components/Conect';
 import Footer from '../src/Components/Footer';
 
 function Contact() {
     return(
         <div>
             <Header/>
-            <h1>This is the contact page. A form might go here or just info</h1>
+            <Connect/>
             <Footer/>
         </div>
     )

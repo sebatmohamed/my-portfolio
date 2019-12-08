@@ -1,4 +1,5 @@
-import "../../../css/about.css";
+import '../../css/about.css'
+
 
 class Info extends React.Component {
   constructor() {
