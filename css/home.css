@@ -22,7 +22,7 @@
   text-shadow: 0 0 8px black;
   padding-bottom: 10px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid gold; /* The typwriter cursor */
+  border-right: 0.15em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
@@ -44,10 +44,30 @@
   from,
   to {
     border-color: transparent;
+    text-shadow: 0 0 8px black;
   }
   50% {
-    border-color: gold;
+    border-color: white;
+    text-shadow: 0 0 8px black;
   }
+}
+
+.Typewriter__wrapper {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border-right: 0.15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: blink-caret 0.75s step-end infinite;;
+}
+
+.Typewriter__cursor {
+  display: none;
 }
 
 .minor {
