@@ -23,6 +23,8 @@ function Footer() {
             
             </div>
 
+            <div>&copy; Sebat Mohamed 2019</div>
+
         </div>
     )
 }

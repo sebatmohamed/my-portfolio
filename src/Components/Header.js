@@ -7,7 +7,7 @@ function Header() {
         <div className="header">
 
             <div className="logo">
-                <a href="http://localhost:3000">Sebat</a>
+                <a href="http://localhost:3000">Sebat Mohamed</a>
             </div>
 
             <div className="nav">
