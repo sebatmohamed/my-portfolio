@@ -5,6 +5,24 @@
   padding: 128px 32px 0 32px;
 }
 
+.Typewriter__wrapper {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border-right: 0.15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.Typewriter__cursor {
+  display: none;
+}
+
 .about-container {
   display: flex;
   margin: 0 auto;
@@ -28,13 +46,12 @@
   padding-bottom: 64px;
 }
 
-.title {
-  font-size: 40px;
-  font-weight: 600;
-}
-
 .sub {
   font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  padding-top: 16px;
 }
 
 .form {
@@ -43,6 +60,10 @@
 
 .form-label {
   margin-bottom: 16px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
 }
 
 input {
@@ -51,7 +72,7 @@ input {
   background: #efefef;
   border: 2px solid #efefef;
   border-radius: 8px;
-  caret-color: #fcc75d;
+  caret-color: #c0362c;;
   font-size: 18px;
   margin: 0;
   outline: none;
@@ -65,7 +86,7 @@ input:hover {
 }
 
 input:focus {
-  border: 2px solid gold;
+  border: 2px solid #c0362c;
   background: white;
 }
 

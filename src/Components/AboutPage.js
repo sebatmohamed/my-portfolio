@@ -1,4 +1,6 @@
-import '../../css/about.css'
+import "../../css/about.css";
+import Typewriter from "typewriter-effect";
+import BackgroundImage from "./BackgroundImage";
 
 class AboutPage extends React.Component {
   constructor() {
@@ -18,11 +20,26 @@ class AboutPage extends React.Component {
   render() {
     return (
       <div className="info">
+        <BackgroundImage />
+
         <div className="about-container">
           <div className="left">
             <div className="headline">
-              <div className="title">Hey! My name is Sebat 🙂</div>
-
+              <Typewriter
+                options={{
+                  strings: [
+                    "Web Developer",
+                    "Lifelong Learner",
+                    "React Lover",
+                    "HTML & CSS expert",
+                    "Javascript Enthusiast",
+                    "Wordpress Critic",
+                    "Front-end Developer"
+                  ],
+                  autoStart: true,
+                  loop: true
+                }}
+              />
               <div className="sub">
                 <div>I'm passionate about Web Development</div>
                 <div>I love making an impact</div>
@@ -46,7 +63,7 @@ class AboutPage extends React.Component {
           </div>
 
           <div className="right">
-            <h1>A picture will go here</h1>
+            <img src="../../peace.jpg"/>
           </div>
         </div>
       </div>
