@@ -54,6 +54,7 @@ class AboutPage extends React.Component {
                 placeholder="Type in your name"
                 value={this.state.yourName}
                 onChange={this.handleChange}
+                autoComplete="off"
               />
             </form>
 

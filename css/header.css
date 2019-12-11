@@ -42,7 +42,7 @@
   color: #ffffff;
   height: 16px;
   outline: none;
-  padding: 0 16px;
+  padding: 0 24px;
   font-size: 14px;
   transition: all 0.25s ease;
   font-weight: bold;
@@ -53,4 +53,46 @@
 
 .nav a:hover {
   transform: scale(1.25);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  height: 16px;
+  outline: none;
+  padding: 0 16px;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.dropdown:hover {
+  transform: scale(1.25);
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: none;
+  color: #ffffff;
+  transition: all 0.5s ease 0s;
+  padding-top: 12px;
+}
+
+.dropdown:hover .dropdown-content a{ 
+  display: block;
+  height: 32px;
+  transition: height 2s ease-in-out;
 }

@@ -72,7 +72,7 @@ input {
   background: #efefef;
   border: 2px solid #efefef;
   border-radius: 8px;
-  caret-color: #c0362c;;
+  caret-color: #c0362c;
   font-size: 18px;
   margin: 0;
   outline: none;
@@ -87,7 +87,9 @@ input:hover {
 
 input:focus {
   border: 2px solid #c0362c;
+  transition: ease 0.25s;
   background: white;
+  color: #c0362c;
 }
 
 .right {
@@ -95,4 +97,10 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex: 1;
+}
+
+span{
+  color: #c0362c;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
 }
