@@ -5,24 +5,6 @@
   padding: 128px 32px 0 32px;
 }
 
-.Typewriter__wrapper {
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: bold;
-  text-shadow: 0 0 8px black;
-  padding-bottom: 10px;
-  overflow: hidden;
-  border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-.Typewriter__cursor {
-  display: none;
-}
-
 .about-container {
   display: flex;
   margin: 0 auto;
@@ -46,6 +28,24 @@
   padding-bottom: 64px;
 }
 
+.Typewriter__wrapper {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border-right: 0.15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.Typewriter__cursor {
+  display: none;
+}
+
 .sub {
   font-size: 22px;
   color: #ffffff;
@@ -64,6 +64,10 @@
   color: #ffffff;
   font-weight: bold;
   text-shadow: 0 0 8px black;
+}
+
+span {
+  color: #c0362c;
 }
 
 input {
@@ -99,8 +103,49 @@ input:focus {
   flex: 1;
 }
 
-span{
-  color: #c0362c;
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+  max-width: 1152px;
+  margin-top: 64px;
+}
+
+h1 {
+  color: #ffffff;
   font-weight: bold;
   text-shadow: 0 0 8px black;
+  font-size: 32px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  text-align: center;
+}
+
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+  max-width: 1152px;
+  margin-top: 64px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-evenly;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  text-align: center;
 }

@@ -1,6 +1,15 @@
 import "../../css/about.css";
 import Typewriter from "typewriter-effect";
 import BackgroundImage from "./BackgroundImage";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import { FaJsSquare } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaGulp } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 class AboutPage extends React.Component {
   constructor() {
@@ -8,7 +17,6 @@ class AboutPage extends React.Component {
     this.state = {
       yourName: ""
     };
-
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -18,6 +26,17 @@ class AboutPage extends React.Component {
   }
 
   render() {
+    const svg = {
+      width: "3em",
+      height: "3em"
+    };
+
+    const svg2 = {
+      width: "3em",
+      height: "3em",
+      marginRight: "24px"
+    };
+
     return (
       <div className="info">
         <BackgroundImage />
@@ -41,13 +60,16 @@ class AboutPage extends React.Component {
                 }}
               />
               <div className="sub">
-                <div>I'm passionate about Web Development</div>
-                <div>I love making an impact</div>
+                <p>I'm passionate about Web Development</p>
+                <p>I love making an impact</p>
               </div>
             </div>
 
             <form className="form">
-              <div className="form-label">Tell me what your name is.</div>
+              <label className="form-label">
+                Tell me what your name is. Hello,{" "}
+                <span>{this.state.yourName}</span>
+              </label>
               <input
                 type="text"
                 name="yourName"
@@ -57,15 +79,56 @@ class AboutPage extends React.Component {
                 autoComplete="off"
               />
             </form>
+          </div>
+
+          <div className="right">{/* <img src="../../peace.jpg" /> */}</div>
+        </div>
+
+        <div className="skills-container">
+          <h1>Technical Skills</h1>
+
+          <main className="skills">
+            <div>
+              <FaHtml5 style={svg} />
+              <p>HTML expert</p>
+            </div>
 
             <div>
-              <span>{this.state.yourName}</span>
+              <FaCss3Alt style={svg2} />
+              <FaSass style={svg} />
+              <p>CSS and Sass expert</p>
             </div>
-          </div>
 
-          <div className="right">
-            <img src="../../peace.jpg"/>
-          </div>
+            <div>
+              <FaJsSquare style={svg} />
+              <p>JavaScript intermediate</p>
+            </div>
+
+            <div>
+              <FaPhp style={svg2} />
+              <FaWordpress style={svg} />
+              <p>PHP and Wordpress magician</p>
+            </div>
+          </main>
+        </div>
+
+        <div className="technologies-container">
+          <h1>Technologies</h1>
+
+          <main className="technologies">
+            <div>
+              <FaReact style={svg} />
+              <p>React intermediate</p>
+            </div>
+            <div>
+              <FaGulp style={svg} />
+              <p>Gulp master</p>
+            </div>
+            <div>
+              <FaGitAlt style={svg} />
+              <p>Git intermediate</p>
+            </div>
+          </main>
         </div>
       </div>
     );
