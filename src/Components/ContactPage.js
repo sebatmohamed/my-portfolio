@@ -1,13 +1,55 @@
 import "../../css/contact.css";
 import BackgroundImage from "./BackgroundImage";
 
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
 
 function ContactPage() {
   return (
-    <div>
+    <div className="contact">
       <BackgroundImage />
 
-      <h1>This is where you can contact me</h1>
+      <div className="contact-container">
+        <h2>
+          Interested in working together? <br/> Get in touch with me to get the ball
+          rolling!
+        </h2>
+
+        <div className="contacts">
+          <div>
+          <a href="mailto:sebatbekri@gmail.com">
+            <FaEnvelope />
+          </a>
+          <p>Email: sebatbekri@gmail.com</p>
+          </div>
+
+          <div>
+          <a>
+          <FaMobileAlt />
+          </a>
+          <p>Phone: (647) 680-5394</p>
+          </div>
+
+          <div>
+          <a href="https://github.com/sebatmohamed">
+            <FaGithub />
+          </a>
+          <p>Check out my code</p>
+          </div>
+
+          <div>
+          <a href="https://www.linkedin.com/in/sebatm/">
+            <FaLinkedinIn />
+          </a>
+          <p>Connect with me</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="copy">&copy; Sebat Mohamed 2019</div>
+
     </div>
   );
 }

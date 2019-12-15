@@ -1,0 +1,87 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 128px 32px 32px 32px;
+  justify-content: space-between;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1152px;
+  margin-top: 32px;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  font-size: 32px;
+  padding-bottom: 96px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contacts div a {
+  color: #c0362c;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 0 4px #c0362c;
+  transition: all 0.25s ease;
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+.contacts div:nth-child(1) a {
+  margin-left: 64px;
+}
+
+.contacts div:nth-child(2) a {
+  margin-left: 48px;
+}
+
+.contacts div:nth-child(3) a {
+  margin-left: 32px;
+}
+
+.contacts div:nth-child(4) a {
+  margin-left: 24px;
+}
+
+.contacts div a svg {
+  width: 2em;
+  height: 2em;
+}
+
+.contacts div p {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  font-size: 16px;
+}
+
+.copy {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  font-size: 16px;
+  margin-top: 192px;
+}

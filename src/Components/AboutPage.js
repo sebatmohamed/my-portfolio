@@ -81,7 +81,9 @@ class AboutPage extends React.Component {
             </form>
           </div>
 
-          <div className="right">{/* <img src="../../peace.jpg" /> */}</div>
+          <div className="right">
+            <img className="my-pic" src=""/>
+          </div>
         </div>
 
         <div className="skills-container">
