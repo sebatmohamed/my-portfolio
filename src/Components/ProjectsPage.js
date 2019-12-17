@@ -12,19 +12,23 @@ class ProjectsPage extends React.Component {
   componentDidMount() {
     fetch("https://api.github.com/users/sebatmohamed/repos")
       .then(response => response.json())
-      .then(data => {
+      .then(response => {
         this.setState({
-          repoList: data
+          repoList: response
         })
       })
   }
 
   render() {
-
     return (
       <div>
         <BackgroundImage />
         <h1>This is where you can see my code</h1>
+
+      {this.state.repoList.length !== 0
+      ? <p>{this.state.repoList[0].name}</p>
+      : <p>Loading...</p>}
+
       </div>
     );
   }
