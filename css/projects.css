@@ -1,0 +1,36 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 128px 32px 32px 32px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1152px;
+}
+
+.repo-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+}
+
+.repo-list li {
+  padding: 32px 64px;
+}
+
+.repo-list li span {
+  color: #c0362c;
+}
+
+.repo-list li a {
+  text-decoration: none;
+  color: #d3d3d3;
+}

@@ -5,7 +5,7 @@ class ProjectsPage extends React.Component {
   constructor() {
     super();
     this.state = {
-      repoList: [],
+      repoList: []
     };
   }
 
@@ -15,20 +15,36 @@ class ProjectsPage extends React.Component {
       .then(response => {
         this.setState({
           repoList: response
-        })
-      })
+        });
+      });
   }
 
   render() {
+    const loader = {
+      display: 'block',
+      margin: '0 auto',
+      width: '128px',
+    }
+
     return (
-      <div>
+      <div className="projects">
         <BackgroundImage />
-        <h1>This is where you can see my code</h1>
 
-      {this.state.repoList.length !== 0
-      ? <p>{this.state.repoList[0].name}</p>
-      : <p>Loading...</p>}
-
+        <div className="projects-container">
+          {this.state.repoList.length !== 0 
+          ? 
+          <ul className="repo-list">
+            {this.state.repoList.map((value, index) => (
+              <li key={index}><span>{value.name}:</span> <br/> {value.description} <br/> Language: {value.language} <br/> Repo: <a href={value.html_url}>{value.html_url}</a></li>
+            ))}
+          </ul>
+          : 
+          <img
+            src="http://www.ifmo.ru/images/loader.gif"
+            alt="loading..."
+            style={loader}
+          />}
+        </div>
       </div>
     );
   }

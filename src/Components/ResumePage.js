@@ -1,12 +1,15 @@
+import '../../css/resume.css';
 import BackgroundImage from "./BackgroundImage";
 
 
 function ResumePage() {
   return (
-    <div>
+    <div className="resume-container">
       <BackgroundImage />
 
-      <h1>This is where my resume will go</h1>
+      <div className="resume">
+        <h1>This is where my resume will go</h1>
+      </div>
     </div>
   );
 }
