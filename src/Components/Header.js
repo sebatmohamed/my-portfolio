@@ -14,17 +14,17 @@ function Header() {
           <a>About</a>
         </Link>
 
-        <div className="dropdown">
+        {/* <div className="dropdown"> */}
           <Link href="/projects">
             <a>Projects</a>
           </Link>
-          <div className="dropdown-content">
+          {/* <div className="dropdown-content">
             <a href="/javascript">JavaScript</a>
             <a href="/css">CSS</a>
             <a href="/php">PHP</a>
             <a href="/react">React</a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         <Link href="/resume">
           <a>Resume</a>

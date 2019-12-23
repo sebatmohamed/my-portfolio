@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
+import { FaCodepen } from "react-icons/fa";
 
 function ContactPage() {
   return (
@@ -26,10 +27,10 @@ function ContactPage() {
           </div>
 
           <div>
-          <a>
-          <FaMobileAlt />
+          <a href="https://codepen.io/sebatmohamed">
+          <FaCodepen />
           </a>
-          <p>Phone: (647) 680-5394</p>
+          <p>See my coding challenges!</p>
           </div>
 
           <div>
