@@ -1,59 +1,170 @@
-.main {
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 144px;
   min-height: 500px;
   width: 100%;
   background: transparent;
+  
 }
 
-.container {
+.main {
   width: 1024px;
   margin: auto;
-}
-
-.text {
   position: relative;
   text-align: center;
-  padding-top: 176px;
 }
 
 .major {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 auto;
+}
+
+.Typewriter__wrapper {
   color: #ffffff;
-  font-size: 47px;
+  font-weight: 700;
+  font-size: 64px;
   font-weight: bold;
   text-shadow: 0 0 8px black;
-  padding-bottom: 10px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  overflow: hidden;
   border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 4.5s steps(33, end), blink-caret 0.75s step-end infinite;
+  letter-spacing: 0.15em;
+  animation: blink-caret 0.75s step-end infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-    text-shadow: 0 0 8px black;
-  }
-  50% {
-    border-color: white;
-    text-shadow: 0 0 8px black;
-  }
+.Typewriter__cursor {
+  display: none;
 }
 
 .minor {
+  text-align: center;
+  font-size: 32px;
   color: #eeeeee;
-  font-size: 30px;
+  font-weight: 500;
   text-shadow: 0 0 8px black;
+  padding: 32px 0px 64px 0px;
+}
+
+.arrow:hover {
+  fill: #c0362c;
+}
+
+.about {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  width: 1024px;
+  padding: 272px 16px;
+}
+
+.left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 512px;
+  padding-top: 32px;
+}
+
+.sub {
+  font-size: 32px;
+  color: #ffffff;
+  text-shadow: 0 0 8px black;
+}
+
+.form {
+  flex: 1;
+}
+
+.form-label {
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+}
+
+.form-label span {
+  color: #c0362c;
+}
+
+input {
+  display: block;
+  position: relative;
+  background: #efefef;
+  border: 2px solid #efefef;
+  border-radius: 8px;
+  caret-color: #c0362c;
+  font-size: 18px;
+  margin: 0;
+  outline: none;
+  padding: 8px 12px;
+  width: 256px;
+}
+
+input:hover {
+  background: white;
+  transition: ease 0.25s;
+}
+
+input:focus {
+  border: 2px solid #c0362c;
+  transition: ease 0.25s;
+  background: white;
+  color: #c0362c;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding-top: 32px;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.my-pic {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 512px;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 48px;
+    max-width: 512px;
+  }
+
+  .minor {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 256px;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 48px;
+    max-width: 256px;
+  }
+
+  .minor {
+    font-size: 24px;
+  }
 }

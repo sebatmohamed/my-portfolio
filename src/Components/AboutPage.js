@@ -1,6 +1,4 @@
 import "../../css/about.css";
-import Typewriter from "typewriter-effect";
-import BackgroundImage from "./BackgroundImage";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
@@ -10,6 +8,7 @@ import { FaWordpress } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaGulp } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+
 
 class AboutPage extends React.Component {
   constructor() {
@@ -27,49 +26,34 @@ class AboutPage extends React.Component {
 
   render() {
     const svg = {
-      width: "3em",
-      height: "3em"
-    };
+      width: "4em",
+      height: "4em",
+    }
 
     const svg2 = {
       width: "3em",
       height: "3em",
-      marginRight: "24px"
-    };
+      marginRight: "24px",
+    }
 
     return (
       <div className="info">
-        <BackgroundImage />
 
         <div className="about-container">
+
           <div className="left">
-            <div className="headline">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Web Developer",
-                    "Lifelong Learner",
-                    "React Lover",
-                    "HTML & CSS expert",
-                    "Javascript Enthusiast",
-                    "Wordpress Critic",
-                    "Front-end Developer"
-                  ],
-                  autoStart: true,
-                  loop: true
-                }}
-              />
               <div className="sub">
-                <p>I'm passionate about Web Development</p>
-                <p>I love making an impact</p>
+                <p>Filter text</p>
+                <p>Some more filter text</p>
               </div>
-            </div>
 
             <form className="form">
+
               <label className="form-label">
                 Tell me what your name is. Hello,{" "}
                 <span>{this.state.yourName}</span>
               </label>
+
               <input
                 type="text"
                 name="yourName"
@@ -78,12 +62,14 @@ class AboutPage extends React.Component {
                 onChange={this.handleChange}
                 autoComplete="off"
               />
+
             </form>
           </div>
 
           <div className="right">
-            <img className="my-pic" src=""/>
+            <img className="my-pic" src="/peace.jpeg"/>
           </div>
+
         </div>
 
         <div className="skills-container">
@@ -115,22 +101,31 @@ class AboutPage extends React.Component {
         </div>
 
         <div className="technologies-container">
-          <h1>Technologies</h1>
-
+          <svg viewBox="0 0 1200 53" style={{color: 'white', height: 'auto', position: 'absolute', top: '0'}}>
+          <path fill="currentColor" d="M1196.008 53H1200V0H0v44.816-8.184C159.341 14.63 311.343 2.484 456.007.196 600.122-2.084 846.789 15.518 1196.008 53z"></path>
+          </svg>
+          {/* <h1>Technologies</h1> */}
           <main className="technologies">
-            <div>
+            <div className="box">
               <FaReact style={svg} />
               <p>React intermediate</p>
+              <p>A modern JavaScript library for building user interfaces.</p>
             </div>
-            <div>
+            <div className="box">
               <FaGulp style={svg} />
               <p>Gulp master</p>
+              <p>Streamlining efficient builds for client side applications.</p>
             </div>
-            <div>
+            <div className="box">
               <FaGitAlt style={svg} />
               <p>Git intermediate</p>
+              <p>Efficiently tracking changes in source code during development.</p>
             </div>
           </main>
+
+          <svg viewBox="0 0 1200 46" style={{color: 'white', height: 'auto', position: 'absolute', bottom: '0'}}>
+          <path fill="currentColor" fill-rule="evenodd" d="M0-7h1200v53H0V-7zm0 30.113V-7h1200v43.495c-37.762 7.58-155.36 7.58-352.791 0C721.412 31.665 480.68.297 248.535.355 197.087.368 114.242 7.955 0 23.113z"></path>          
+          </svg>
         </div>
       </div>
     );

@@ -81,8 +81,8 @@ h2 {
   color: #ffffff;
   width: 100%;
   height: 80px;
-  display: flex;
   position: absolute;
+  display: flex;
   background: transparent;
   align-items: center;
   text-shadow: 0 0 8px black;

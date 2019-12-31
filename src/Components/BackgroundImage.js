@@ -1,12 +1,12 @@
-function BackgroundImage() {
+const BackgroundImage = () => {
 
     const background = {
         top: "50%",
         left: "50%",
         filter: "blur(16px)",
         overflow: "hidden",
-        position: "fixed",
-        minWidth: "110%",
+        position: "absolute",
+        minWidth: "100%",
         transform: "translateX(-50%) translateY(-50%)",
         minHeight: "110%",
         zIndex: -1

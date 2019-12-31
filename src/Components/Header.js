@@ -1,41 +1,42 @@
 import Link from "next/link";
-
 import "../../css/header.css";
 
-function Header() {
+const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <a href="http://localhost:3000">Sebat Mohamed</a>
+        <Link href="/">
+          <a>Sebat Mohamed</a>
+        </Link>
       </div>
 
       <div className="nav">
         <Link href="/about">
-          <a>About</a>
+          <a className="page">
+            <span>About</span>
+          </a>
         </Link>
 
-        {/* <div className="dropdown"> */}
-          <Link href="/projects">
-            <a>Projects</a>
-          </Link>
-          {/* <div className="dropdown-content">
-            <a href="/javascript">JavaScript</a>
-            <a href="/css">CSS</a>
-            <a href="/php">PHP</a>
-            <a href="/react">React</a>
-          </div> */}
-        {/* </div> */}
+        <Link href="/projects">
+          <a className="page">
+            <span>Projects</span>
+          </a>
+        </Link>
 
         <Link href="/resume">
-          <a>Resume</a>
+          <a className="page">
+            <span>Resume</span>
+          </a>
         </Link>
 
         <Link href="/contact">
-          <a>Contact</a>
+          <a className="page">
+            <span>Contact</span>
+          </a>
         </Link>
       </div>
     </div>
   );
-}
+};
 
 export default Header;

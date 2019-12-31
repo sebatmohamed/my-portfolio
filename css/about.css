@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 64px 32px 32px 32px;
+  padding: 64px 0px 32px 0px;
 }
 
 .about-container {
@@ -21,39 +21,6 @@
   max-width: 512px;
 }
 
-.headline {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding-bottom: 64px;
-}
-
-.Typewriter__wrapper {
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: 0 0 8px black;
-  padding-bottom: 10px;
-  overflow: hidden;
-  border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-.Typewriter__cursor {
-  display: none;
-}
-
-.sub {
-  font-size: 22px;
-  color: #ffffff;
-  font-weight: bold;
-  text-shadow: 0 0 8px black;
-  padding-top: 16px;
-}
-
 .form {
   flex: 1;
 }
@@ -66,7 +33,7 @@
   text-shadow: 0 0 8px black;
 }
 
-span {
+.form-label span {
   color: #c0362c;
 }
 
@@ -101,11 +68,17 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex: 1;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .my-pic {
-  width: 100%;
-  margin-bottom: 64px;
+  width: 60%;
+  /* margin-bottom: 64px; */
 }
 
 .skills-container {
@@ -129,27 +102,47 @@ h1 {
 .skills {
   display: flex;
   justify-content: space-between;
-  color: #ffffff;
+  color: black;
   font-weight: bold;
   text-shadow: 0 0 8px black;
   text-align: center;
 }
 
 .technologies-container {
-  display: flex;
+  margin-top: 128px;
+  background: #ffb1b1;
+  position: relative;
+  /* display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
   padding: 0 16px;
   max-width: 1152px;
-  margin-top: 64px;
+  margin-top: 64px; */
 }
 
 .technologies {
   display: flex;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 1152px;
+  padding: 96px 0;
+  text-align: center;
+  /* display: flex;
   justify-content: space-evenly;
   color: #ffffff;
   font-weight: bold;
   text-shadow: 0 0 8px black;
-  text-align: center;
+  text-align: center; */
+}
+
+.box {
+  flex: 1;
+  padding: 32px;
+}
+
+.box p:nth-child(2) {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
 }

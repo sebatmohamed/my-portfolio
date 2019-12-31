@@ -2,7 +2,18 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 64px 32px 32px 32px;
+  padding: 512px 32px 32px 32px;
+}
+
+.hero-banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
 }
 
 .projects-container {
@@ -11,11 +22,94 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1152px;
+  padding-top: 64px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  padding-top: 128px;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.carousel h1 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+}
+
+.swiper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1152px;
+  width: 100%;
+  height: 648px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.swiper-button-next:after {
+  color: #c0362c;
+}
+
+.swiper-button-prev:after {
+  color: #c0362c;
+}
+
+.swiper-pagination {
+  padding-top: 64px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #c0362c;
+}
+
+.repo-images {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.repo-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+  animation: fadein 2s;
+  margin-left: 80px;
+  margin-top: -160px;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.repo-info h1 {
+  color: #c0362c;
+  font-size: 32px;
+}
+
+.repo-info p {
+  font-size: 22px;
+  padding-right: 64px;
 }
 
 .repo-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   font-size: 22px;
   color: #ffffff;
   font-weight: bold;
@@ -24,6 +118,7 @@
 
 .repo-list li {
   padding: 32px 64px;
+  text-align: center;
 }
 
 .repo-list li span {
@@ -33,4 +128,20 @@
 .repo-list li a {
   text-decoration: none;
   color: #d3d3d3;
+}
+
+/* Mobile version  */
+
+@media (max-width: 1024px) {
+  .repo-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet version */
+
+@media (max-width: 768px) {
+  .repo-list {
+    grid-template-columns: 1fr;
+  }
 }

@@ -6,6 +6,7 @@ function Contact() {
         <div>
             <Header/>
             <ContactPage/>
+            <div className="copy">&copy; Sebat Mohamed 2019</div>
         </div>
     )
 }

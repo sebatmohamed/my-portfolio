@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
 
-function Footer() {
+const Footer = () => {
     return(
         <div className="footer">
 

@@ -7,7 +7,7 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
 import { FaCodepen } from "react-icons/fa";
 
-function ContactPage() {
+const ContactPage = () => {
   return (
     <div className="contact">
       <BackgroundImage />
@@ -48,9 +48,6 @@ function ContactPage() {
           </div>
         </div>
       </div>
-
-      <div className="copy">&copy; Sebat Mohamed 2019</div>
-
     </div>
   );
 }

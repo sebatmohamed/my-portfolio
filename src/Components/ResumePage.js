@@ -2,7 +2,7 @@ import '../../css/resume.css';
 import BackgroundImage from "./BackgroundImage";
 
 
-function ResumePage() {
+const ResumePage = () => {
   return (
     <div className="resume-container">
       <BackgroundImage />
