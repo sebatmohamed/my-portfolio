@@ -2,6 +2,15 @@ import "../../css/home.css";
 import BackgroundImage from "./BackgroundImage";
 import Typewriter from "typewriter-effect";
 import { FaAngleDown } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import { FaJsSquare } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaGulp } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 class Main extends React.Component {
   constructor() {
@@ -20,32 +29,21 @@ class Main extends React.Component {
   }
 
   handleClick(event) {
-    event.preventDefault
+    event.preventDefault;
     this.state.ref.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-  })
-}
+      behavior: "smooth",
+      block: "start"
+    });
+  }
 
   render() {
-    const svg = {
-      width: "4em",
-      height: "4em"
-    };
-
-    const svg2 = {
+    const arrow = {
+      color: "white",
       width: "3em",
       height: "3em",
-      marginRight: "24px"
+      border: "2px solid",
+      borderRadius: "50%"
     };
-
-    const arrow = {
-      color: 'white', 
-      width: '3em', 
-      height: '3em',
-      border: '2px solid',
-      borderRadius: '50%',
-    }
 
     return (
       <div className="container">
@@ -75,15 +73,38 @@ class Main extends React.Component {
           </div>
 
           <div>
-            <FaAngleDown style={arrow} onClick={this.handleClick} className="arrow"/>
+            <FaAngleDown
+              style={arrow}
+              onClick={this.handleClick}
+              className="arrow"
+            />
           </div>
         </div>
 
         <div className="about">
           <div className="left" ref={this.state.ref}>
             <div className="sub">
-              <p>Filter text</p>
-              <p>Some more filter text</p>
+              <h2>Education:</h2>
+              <img
+                src="/redLogo.png"
+                style={{
+                  width: "50%",
+                  objectFit: "cover",
+                  marginLeft: "-8px",
+                  display: "flex"
+                }}
+              />
+              <p>Diploma, Web Development Dec 2019</p>
+              <img
+                src="/macLogo.png"
+                style={{
+                  width: "40%",
+                  objectFit: "cover",
+                  marginLeft: "-16px",
+                  display: "flex"
+                }}
+              />
+              <p>McMaster University BSc Jun 2018</p>
             </div>
 
             <form className="form">
@@ -106,6 +127,86 @@ class Main extends React.Component {
           <div className="right">
             <img className="my-pic" src="/peace.jpeg" />
           </div>
+        </div>
+
+        <div className="skills">
+          <h1>Technical Skills</h1>
+
+          <main className="languages">
+            <div>
+              <FaHtml5
+                style={{ width: "4em", height: "4em", color: "#f06529" }}
+              />
+              <p>HTML expert</p>
+            </div>
+
+            <div>
+              <FaCss3Alt
+                style={{
+                  width: "3em",
+                  height: "3em",
+                  marginRight: "24px",
+                  color: "#2965f1"
+                }}
+              />
+              <FaSass
+                style={{ width: "4em", height: "4em", color: "#cc6699" }}
+              />
+              <p>CSS and Sass expert</p>
+            </div>
+
+            <div>
+              <FaJsSquare
+                style={{ width: "4em", height: "4em", color: "#f0db4f" }}
+              />
+              <p>JavaScript intermediate</p>
+            </div>
+
+            <div>
+              <FaPhp
+                style={{
+                  width: "3em",
+                  height: "3em",
+                  marginRight: "24px",
+                  color: "#8993be"
+                }}
+              />
+              <FaWordpress
+                style={{ width: "4em", height: "4em", color: "#00749C" }}
+              />
+              <p>PHP and Wordpress magician</p>
+            </div>
+          </main>
+        </div>
+
+        <div className="technologies-container">
+          <h1>Technologies</h1>
+
+          <main className="technologies">
+            <div className="box">
+              <FaReact
+                style={{ width: "4em", height: "4em", color: "#61dbfb" }}
+              />
+              <p>React intermediate</p>
+              <p>A modern JavaScript library for building user interfaces.</p>
+            </div>
+            <div className="box">
+              <FaGulp
+                style={{ width: "4em", height: "4em", color: "#DB4446" }}
+              />
+              <p>Gulp master</p>
+              <p>Streamlining efficient builds for client side applications.</p>
+            </div>
+            <div className="box">
+              <FaGitAlt
+                style={{ width: "4em", height: "4em", color: "#3E2C00" }}
+              />
+              <p>Git intermediate</p>
+              <p>
+                Efficiently tracking changes in source code during development.
+              </p>
+            </div>
+          </main>
         </div>
       </div>
     );

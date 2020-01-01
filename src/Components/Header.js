@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "../../css/header.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   return (
@@ -11,12 +12,6 @@ const Header = () => {
       </div>
 
       <div className="nav">
-        <Link href="/about">
-          <a className="page">
-            <span>About</span>
-          </a>
-        </Link>
-
         <Link href="/projects">
           <a className="page">
             <span>Projects</span>
@@ -34,6 +29,12 @@ const Header = () => {
             <span>Contact</span>
           </a>
         </Link>
+
+        <div className="menu">
+          <GiHamburgerMenu
+            style={{ color: "white", width: "2em", height: "2em" }}
+          />
+        </div>
       </div>
     </div>
   );
