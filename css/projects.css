@@ -2,38 +2,17 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 512px 32px 32px 32px;
-}
-
-.hero-banner h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 64px;
-  color: #ffffff;
-  font-weight: bold;
-  text-shadow: 0 0 8px black;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1152px;
-  padding-top: 64px;
+  padding: 32px;
 }
 
 .carousel {
   display: flex;
   flex-direction: column;
-  padding-top: 128px;
-  max-width: 1152px;
+  max-width: 1088px;
   margin: 0 auto;
 }
 
-.carousel h1 {
+.carousel h2 {
   color: #ffffff;
   font-size: 32px;
   font-weight: bold;
@@ -47,7 +26,7 @@
   margin: 0 auto;
   max-width: 1152px;
   width: 100%;
-  height: 648px;
+  height: 528px;
 }
 
 .swiper-slide {
@@ -62,10 +41,6 @@
 
 .swiper-button-prev:after {
   color: #c0362c;
-}
-
-.swiper-pagination {
-  padding-top: 64px;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
@@ -85,7 +60,7 @@
   flex-direction: column;
   color: #ffffff;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
   text-shadow: 0 0 8px black;
   animation: fadein 2s;
   margin-left: 80px;
@@ -107,27 +82,79 @@
   padding-right: 64px;
 }
 
+.repo-info p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.repo-info p a span {
+  color: #c0362c;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1152px;
+  padding-top: 64px;
+}
+
+.projects-container p {
+  font-size: 24px;
+  padding: 32px 0;
+}
+
+.projects-container p a {
+  text-decoration: none;
+  color: #c0362c;
+}
+
 .repo-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
   font-size: 22px;
   color: #ffffff;
   font-weight: bold;
-  text-shadow: 0 0 8px black;
 }
 
-.repo-list li {
-  padding: 32px 64px;
+.repo-list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
   text-align: center;
+  background: #FFFFFF;
+  border-radius: 12px;
 }
 
 .repo-list li span {
   color: #c0362c;
+  font-weight: 700;
+  font-size: 32px;
 }
 
-.repo-list li a {
+.repo-list p {
+  color: black;
+  font-size: 16px;
+  padding-top: 16px;
+}
+
+.repo-list p span {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 6px black;
+}
+
+.repo-list p a {
   text-decoration: none;
-  color: #d3d3d3;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 6px black;
 }
 
 /* Mobile version  */

@@ -8,7 +8,7 @@ const Carousel = () => {
     spaceBetween: 30,
     speed: 600,
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false
     },
     parallax: true,
@@ -32,6 +32,21 @@ const Carousel = () => {
       <div>
         <div className="repo-images">
           <img
+            src="/Harp-Desktop.png"
+            alt="Harp and Hawthorne desktop version"
+            style={{ width: "100%", marginLeft: "96px" }}
+          />
+        </div>
+        
+        <div className="repo-info">
+          <h1>Wordpress:</h1>
+          <p>A sophisticated, elegant client project. See live <a href="https://harpandhawthorne.com/" target="_blank"><span>website!</span></a></p>
+        </div>
+      </div>
+      
+      <div>
+        <div className="repo-images">
+          <img
             src="/Aloha-desktop.png"
             alt="Aloha desktop version"
             style={{ width: "100%" }}
@@ -49,7 +64,7 @@ const Carousel = () => {
         </div>
 
         <div className="repo-info">
-          <h1>HTML/CSS</h1>
+          <h1>HTML/CSS:</h1>
           <p>A mobile first responsive ecommerce website</p>
         </div>
       </div>
@@ -64,7 +79,7 @@ const Carousel = () => {
         </div>
         <div className="repo-info">
           <h1>JavaScript:</h1>
-          <p>A fun game</p>
+          <p>A collaborative pong game designed with our own creativity</p>
         </div>
       </div>
 
@@ -83,7 +98,7 @@ const Carousel = () => {
           <img
             src="/Insta-mobile.png"
             alt="InstaNews mobile version"
-            style={{ width: "25%", marginLeft: "-416px", marginTop: "160px" }}
+            style={{ width: "25%", marginLeft: "-376px", marginTop: "160px" }}
           />
         </div>
 

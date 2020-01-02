@@ -27,21 +27,21 @@ const ContactPage = () => {
           </div>
 
           <div>
-          <a href="https://codepen.io/sebatmohamed">
+          <a href="https://codepen.io/sebatmohamed" target="_blank">
           <FaCodepen />
           </a>
           <p>See my coding challenges!</p>
           </div>
 
           <div>
-          <a href="https://github.com/sebatmohamed">
+          <a href="https://github.com/sebatmohamed" target="_blank">
             <FaGithub />
           </a>
           <p>Check out my code</p>
           </div>
 
           <div>
-          <a href="https://www.linkedin.com/in/sebatm/">
+          <a href="https://www.linkedin.com/in/sebatm/" target="_blank">
             <FaLinkedinIn />
           </a>
           <p>Connect with me</p>

@@ -15,7 +15,7 @@
   margin-top: 64px;
 }
 
-h2 {
+.contact-container h2 {
   text-align: center;
   color: #ffffff;
   font-weight: bold;
@@ -48,19 +48,19 @@ h2 {
 }
 
 .contacts div:nth-child(1) a {
-  margin-left: 64px;
+  margin-left: 80px;
 }
 
 .contacts div:nth-child(2) a {
-  margin-left: 56px;
+  margin-left: 70px;
 }
 
 .contacts div:nth-child(3) a {
-  margin-left: 32px;
+  margin-left: 40px;
 }
 
 .contacts div:nth-child(4) a {
-  margin-left: 24px;
+  margin-left: 32px;
 }
 
 .contacts div a svg {

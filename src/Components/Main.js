@@ -1,7 +1,7 @@
 import "../../css/home.css";
 import BackgroundImage from "./BackgroundImage";
 import Typewriter from "typewriter-effect";
-import { FaAngleDown } from "react-icons/fa";
+import{ IoIosArrowDropdown } from "react-icons/io";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
@@ -41,8 +41,6 @@ class Main extends React.Component {
       color: "white",
       width: "3em",
       height: "3em",
-      border: "2px solid",
-      borderRadius: "50%"
     };
 
     return (
@@ -73,7 +71,7 @@ class Main extends React.Component {
           </div>
 
           <div>
-            <FaAngleDown
+            <IoIosArrowDropdown
               style={arrow}
               onClick={this.handleClick}
               className="arrow"
@@ -83,6 +81,24 @@ class Main extends React.Component {
 
         <div className="about">
           <div className="left" ref={this.state.ref}>
+
+            <form className="form">
+              <h1>Welcome! My Name is Sebat Mohamed 🙂</h1>
+              <label className="form-label">
+                Tell me what your name is. Hello,{" "}
+                <span>{this.state.yourName}</span>
+              </label>
+
+              <input
+                type="text"
+                name="yourName"
+                placeholder="Type in your name"
+                value={this.state.yourName}
+                onChange={this.handleChange}
+                autoComplete="off"
+              />
+            </form>
+
             <div className="sub">
               <h2>Education:</h2>
               <img
@@ -106,22 +122,6 @@ class Main extends React.Component {
               />
               <p>McMaster University BSc Jun 2018</p>
             </div>
-
-            <form className="form">
-              <label className="form-label">
-                Tell me what your name is. Hello,{" "}
-                <span>{this.state.yourName}</span>
-              </label>
-
-              <input
-                type="text"
-                name="yourName"
-                placeholder="Type in your name"
-                value={this.state.yourName}
-                onChange={this.handleChange}
-                autoComplete="off"
-              />
-            </form>
           </div>
 
           <div className="right">

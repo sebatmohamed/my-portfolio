@@ -8,7 +8,7 @@ const BackgroundImage = () => {
         position: "absolute",
         minWidth: "100%",
         transform: "translateX(-50%) translateY(-50%)",
-        minHeight: "110%",
+        minHeight: "100%",
         zIndex: -1
       };
 
