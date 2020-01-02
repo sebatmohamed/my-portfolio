@@ -5,18 +5,25 @@
   padding: 32px;
 }
 
+.projects .title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 48px;
+}
+
+.projects .title h2 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0 0 8px black;
+}
+
 .carousel {
   display: flex;
   flex-direction: column;
   max-width: 1088px;
   margin: 0 auto;
-}
-
-.carousel h2 {
-  color: #ffffff;
-  font-size: 32px;
-  font-weight: bold;
-  text-shadow: 0 0 8px black;
 }
 
 .swiper-container {
@@ -50,6 +57,7 @@
 .repo-images {
   display: flex;
   align-items: center;
+  flex: 1;
   width: 60%;
   margin: 0 auto;
 }
@@ -100,12 +108,12 @@
   padding-top: 64px;
 }
 
-.projects-container p {
+.projects-container h1 {
   font-size: 24px;
   padding: 32px 0;
 }
 
-.projects-container p a {
+.projects-container h1 a {
   text-decoration: none;
   color: #c0362c;
 }
@@ -119,7 +127,7 @@
   font-weight: bold;
 }
 
-.repo-list div {
+.repo-list .repo-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,42 +140,91 @@
   border-radius: 12px;
 }
 
-.repo-list li span {
-  color: #c0362c;
-  font-weight: 700;
-  font-size: 32px;
+.repo-list .caption {
+  display: flex;
+  flex-direction: column;
 }
 
-.repo-list p {
+.repo-container .caption p {
+  padding-top: 16px;
   color: black;
   font-size: 16px;
-  padding-top: 16px;
 }
 
-.repo-list p span {
+.repo-container li span {
+  color: #c0362c;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.repo-container .caption p span {
   color: #ffffff;
   font-weight: 700;
   text-shadow: 0 0 6px black;
 }
 
-.repo-list p a {
+.repo-container .caption p a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
   text-shadow: 0 0 6px black;
 }
 
-/* Mobile version  */
+/* Tablet Version */
 
 @media (max-width: 1024px) {
+
+  
+
+  .repo-info {
+    margin-top: 0;
+  }
+
+  .projects .title {
+    justify-content: center;
+  }
+
+  .projects .title h2 {
+    text-align: center;
+  }
+
+  .projects .title p {
+    text-align: center;
+  }
+
+  .carousel {
+    max-width: 768px;
+  }
+
   .repo-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Tablet version */
+/* Mobile Version */
 
 @media (max-width: 768px) {
+
+  .repo-info {
+    display: none;
+  }
+
+  .projects .title {
+    justify-content: center;
+  }
+
+  .projects .title h2 {
+    text-align: center;
+  }
+
+  .projects .title p {
+    text-align: center;
+  }
+
+  .carousel {
+    max-width: 384px;
+  }
+
   .repo-list {
     grid-template-columns: 1fr;
   }

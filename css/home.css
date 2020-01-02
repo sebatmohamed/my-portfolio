@@ -5,7 +5,6 @@
   padding-top: 144px;
   width: 100%;
   background: transparent;
-  
 }
 
 .main {
@@ -31,7 +30,8 @@
   font-weight: bold;
   text-shadow: 0 0 8px black;
   overflow: hidden;
-  border-right: 0.15em solid white; /* The typwriter cursor */
+  white-space: nowrap;
+  border-right: 0.12em solid white; /* The typwriter cursor */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
   animation: blink-caret 0.75s step-end infinite;
@@ -59,7 +59,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1088px;
-  padding: 272px 16px 96px 16px;
+  padding: 224px 16px 64px 16px;
 }
 
 .left {
@@ -68,7 +68,7 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 512px;
-  padding-top: 32px;
+  padding-top: 64px;
 }
 
 .form {
@@ -95,7 +95,7 @@
   color: #c0362c;
 }
 
-input {
+.form input {
   display: block;
   position: relative;
   background: #efefef;
@@ -127,6 +127,20 @@ input:focus {
   padding-bottom: 64px;
 }
 
+.sub .redlogo {
+  width: 50%;
+  object-fit: cover;
+  margin-left: -8px;
+  display: flex;
+}
+
+.sub .maclogo {
+  width: 40%;
+  object-fit: cover;
+  margin-left: -16px;
+  display: flex;
+}
+
 .sub h2 {
   font-size: 32px;
   padding-bottom: 32px;
@@ -152,8 +166,12 @@ input:focus {
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .my-pic {
@@ -180,6 +198,7 @@ input:focus {
 
 .languages {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   color: black;
   font-weight: bold;
@@ -205,6 +224,7 @@ input:focus {
 
 .technologies {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   font-weight: bold;
   text-align: center;
@@ -215,14 +235,16 @@ input:focus {
   padding: 32px;
 }
 
-.box p:nth-child(2) {
+.technologies .box p:nth-child(2) {
   margin-bottom: 16px;
   font-size: 24px;
   font-weight: 600;
 }
 
+/* Tablet Version */
+
 @media (max-width: 1024px) {
-  .container {
+  .main {
     max-width: 512px;
   }
 
@@ -236,17 +258,72 @@ input:focus {
   }
 }
 
+/* Mobile Version */
+
 @media (max-width: 768px) {
-  .container {
+  .main {
     max-width: 256px;
   }
 
-  .Typewriter__wrapper {
-    font-size: 48px;
-    max-width: 256px;
+  .major {
+    display: none;
   }
 
   .minor {
     font-size: 24px;
+    padding-top: 0;
   }
+
+  .about {
+    display: block;
+  }
+
+  .left {
+    padding-top: 32px;
+    text-align: center;
+  }
+
+  .form input {
+    margin: 0 auto;
+  }
+
+  .sub {
+    text-align: center;
+  }
+
+  .sub .redlogo {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .sub .maclogo {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+  .skills h1 {
+    padding-bottom: 0;
+  }
+
+  /* .languages {
+    flex-flow: row wrap;
+  } */
+
+  .technologies-container {
+    text-align: center;
+  }
+
+  .technologies-container h1 {
+    padding-bottom: 0;
+  }
+
+  /* .technologies {
+    display: block;
+  } */
 }

@@ -15,9 +15,10 @@
 }
 
 .resume p {
+  flex: 1;
   font-size: 48px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 0 0 8px black;
   padding-bottom: 32px;
 }
@@ -25,4 +26,28 @@
 .resume p a {
   text-decoration: none;
   color: #c0362c;
+}
+
+
+/* Tablet Version */
+
+@media (max-width: 1024px) {
+
+  .resume p {
+    text-align: center;
+  }
+  
+}
+
+/* Mobile Version */
+
+@media (max-width: 768px) {
+
+  .resume p {
+    text-align: center;
+  }
+
+  .resume-pic {
+    display: none;
+  }
 }

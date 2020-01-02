@@ -41,26 +41,31 @@ class ProjectsPage extends React.Component {
     return (
       <div className="projects">
 
-        <div className="carousel">
+        <div className="title">
           <h2>Check out some of my fun projects here:</h2>
-          <p>Scroll down for some more</p>
+          <p>Scroll down for some more</p> 
+        </div>
+
+        <div className="carousel">
           <Carousel/>
         </div>
 
         <div className="projects-container">
 
-        <p>Interested in what else I have done? See below and my <a href="https://github.com/sebatmohamed" target="_blank">Github portfolio</a> for more!</p>
+        <h1>Interested in what else I have done? See below and my <a href="https://github.com/sebatmohamed" target="_blank">Github portfolio</a> for more!</h1>
 
         
           {this.state.repoList.length !== 0 
           ? 
           <ul className="repo-list">
             {this.state.repoList.map((value, index) => (
-              <div>
+              <div className="repo-container">
                 <li key={index}><span>{value.name}:</span></li>
-                <p>{value.description}</p>
-                <p>Main programming language: <span>{value.language}</span></p>
-                <p>Repo link: <a href={value.html_url} target="_blank">{value.name}</a></p>
+                <div className="caption">
+                  <p>{value.description}</p>
+                  <p>Programming language: <span>{value.language}</span></p>
+                  <p>Repo link: <a href={value.html_url} target="_blank">{value.name}</a></p> 
+                </div>
               </div>
             ))}
           </ul>

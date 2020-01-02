@@ -24,6 +24,15 @@ const Carousel = () => {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      768: {
+        spaceBetween: 150
+      },
+
+      375: {
+        spaceBetween: 300
+      },
     }
   }
 
@@ -54,11 +63,13 @@ const Carousel = () => {
           <img
             src="/Aloha-tablet.png"
             alt="Aloha tablet version"
+            className="aloha-tablet"
             style={{ width: "40%", marginLeft: "-224px", marginTop: "96px" }}
           />
           <img
             src="/Aloha-mobile.png"
             alt="Aloha mobile version"
+            className="aloha-mobile"
             style={{ width: "25%", marginLeft: "-384px", marginTop: "160px" }}
           />
         </div>
@@ -93,11 +104,13 @@ const Carousel = () => {
           <img
             src="/Insta-tablet.png"
             alt="InstaNews tablet version"
+            className="insta-tablet"
             style={{ width: "40%", marginLeft: "-224px", marginTop: "96px" }}
           />
           <img
             src="/Insta-mobile.png"
             alt="InstaNews mobile version"
+            className="insta-mobile"
             style={{ width: "25%", marginLeft: "-376px", marginTop: "160px" }}
           />
         </div>

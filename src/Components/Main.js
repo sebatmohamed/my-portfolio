@@ -103,22 +103,14 @@ class Main extends React.Component {
               <h2>Education:</h2>
               <img
                 src="/redLogo.png"
-                style={{
-                  width: "50%",
-                  objectFit: "cover",
-                  marginLeft: "-8px",
-                  display: "flex"
-                }}
+                alt="RED Academy logo"
+                className="redlogo"
               />
               <p>Diploma, Web Development Dec 2019</p>
               <img
                 src="/macLogo.png"
-                style={{
-                  width: "40%",
-                  objectFit: "cover",
-                  marginLeft: "-16px",
-                  display: "flex"
-                }}
+                alt="McMaster University logo"
+                className="maclogo"
               />
               <p>McMaster University BSc Jun 2018</p>
             </div>
@@ -133,14 +125,14 @@ class Main extends React.Component {
           <h1>Technical Skills</h1>
 
           <main className="languages">
-            <div>
+            <div className="box">
               <FaHtml5
                 style={{ width: "4em", height: "4em", color: "#f06529" }}
               />
               <p>HTML expert</p>
             </div>
 
-            <div>
+            <div className="box">
               <FaCss3Alt
                 style={{
                   width: "3em",
@@ -155,14 +147,14 @@ class Main extends React.Component {
               <p>CSS and Sass expert</p>
             </div>
 
-            <div>
+            <div className="box">
               <FaJsSquare
                 style={{ width: "4em", height: "4em", color: "#f0db4f" }}
               />
               <p>JavaScript intermediate</p>
             </div>
 
-            <div>
+            <div className="box">
               <FaPhp
                 style={{
                   width: "3em",

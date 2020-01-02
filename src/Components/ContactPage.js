@@ -23,7 +23,7 @@ const ContactPage = () => {
           <a href="mailto:sebatbekri@gmail.com">
             <FaEnvelope />
           </a>
-          <p>Email: sebatbekri@gmail.com</p>
+          <p>sebatbekri@gmail.com</p>
           </div>
 
           <div>

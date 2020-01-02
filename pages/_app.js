@@ -1,7 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import '../css/reset.css';
-import '../css/body.css';
+import '../css/index.css';
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for

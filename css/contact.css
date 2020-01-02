@@ -9,6 +9,7 @@
 .contact-container {
   display: flex;
   flex-direction: column;
+  flex: 1;
   margin: 0 auto;
   width: 100%;
   max-width: 1152px;
@@ -21,14 +22,22 @@
   font-weight: bold;
   text-shadow: 0 0 8px black;
   font-size: 32px;
-  padding-bottom: 96px;
+  padding-bottom: 64px;
 }
 
 .contacts {
   display: flex;
-  justify-content: space-evenly;
+  flex: 1;
   margin: 0 auto;
   width: 100%;
+}
+
+.contacts div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 32px;
 }
 
 .contacts div a {
@@ -47,22 +56,6 @@
   align-self: center;
 }
 
-.contacts div:nth-child(1) a {
-  margin-left: 80px;
-}
-
-.contacts div:nth-child(2) a {
-  margin-left: 70px;
-}
-
-.contacts div:nth-child(3) a {
-  margin-left: 40px;
-}
-
-.contacts div:nth-child(4) a {
-  margin-left: 32px;
-}
-
 .contacts div a svg {
   width: 2em;
   height: 2em;
@@ -70,6 +63,7 @@
 
 .contacts div p {
   display: flex;
+  text-align: center;
   justify-content: center;
   color: #ffffff;
   font-weight: bold;
@@ -90,4 +84,32 @@
   justify-content: center;
   bottom: 0;
   left: 0;
+}
+
+/* Tablet Version */
+
+@media (max-width: 1024px) {
+  .contacts div p {
+    display: none;
+  }
+
+}
+
+/* Mobile Version */
+
+@media (max-width: 768px) {
+  .contacts div p {
+    display: none;
+  }
+
+  .contacts div a svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .contacts div a {
+    width: 48px;
+    height: 48px;
+  }
+
 }
