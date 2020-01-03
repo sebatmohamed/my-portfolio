@@ -30,6 +30,7 @@
   flex: 1;
   margin: 0 auto;
   width: 100%;
+  animation: fadein 1s;
 }
 
 .contacts div {
@@ -89,27 +90,26 @@
 /* Tablet Version */
 
 @media (max-width: 1024px) {
-  .contacts div p {
-    display: none;
+
+  .contacts div {
+    padding: 16px;
   }
 
+  /* .contacts div p {
+    display: none;
+  } */
 }
 
 /* Mobile Version */
 
 @media (max-width: 768px) {
+
+  .contacts div {
+    padding: 16px;
+  }
+
   .contacts div p {
     display: none;
-  }
-
-  .contacts div a svg {
-    width: 1.5em;
-    height: 1.5em;
-  }
-
-  .contacts div a {
-    width: 48px;
-    height: 48px;
   }
 
 }

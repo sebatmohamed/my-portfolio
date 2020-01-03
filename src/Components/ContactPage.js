@@ -30,14 +30,14 @@ const ContactPage = () => {
           <a href="https://codepen.io/sebatmohamed" target="_blank">
           <FaCodepen />
           </a>
-          <p>See my coding challenges!</p>
+          <p>Coding challenges!</p>
           </div>
 
           <div>
           <a href="https://github.com/sebatmohamed" target="_blank">
             <FaGithub />
           </a>
-          <p>Check out my code</p>
+          <p>See my work</p>
           </div>
 
           <div>

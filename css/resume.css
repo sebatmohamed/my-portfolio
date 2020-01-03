@@ -8,6 +8,7 @@
 .resume {
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
   margin: 0 auto;
   width: 100%;
@@ -17,15 +18,19 @@
 .resume p {
   flex: 1;
   font-size: 48px;
+  text-align: center;
   font-weight: 500;
   color: #ffffff;
   text-shadow: 0 0 8px black;
-  padding-bottom: 32px;
+  padding: 32px;
 }
 
 .resume p a {
-  text-decoration: none;
   color: #c0362c;
+}
+
+.resume-pic {
+  animation: fadein 1s;
 }
 
 
