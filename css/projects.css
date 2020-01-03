@@ -10,6 +10,7 @@
   flex-direction: column;
   flex: 1;
   margin-left: 48px;
+  padding-top: 32px;
 }
 
 .projects .title h2 {
@@ -62,6 +63,44 @@
   margin: 0 auto;
 }
 
+.repo-images .aloha-desktop {
+  width: 100%;
+}
+
+.repo-images .insta-desktop {
+  width: 100%;
+}
+
+.repo-images .aloha-tablet {
+  width: 40%;
+  margin-left: -172px;
+  margin-top: 80px;
+}
+
+.repo-images .aloha-mobile {
+  width: 25%;
+  margin-left: -280px;
+  margin-top: 144px;
+}
+
+.repo-images .insta-tablet {
+  width: 40%;
+  margin-left: -172px;
+  margin-top: 80px;
+}
+
+.repo-images .insta-mobile {
+  width: 25%;
+  margin-left: -280px;
+  margin-top: 144px;
+}
+
+.repo-images .desktop {
+  width: 100%;
+  margin-left: 70px;
+  margin-top: 32px;
+}
+
 .repo-info {
   display: flex;
   flex: 1;
@@ -76,8 +115,12 @@
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .repo-info h1 {
@@ -136,7 +179,7 @@
   height: 100%;
   padding: 32px;
   text-align: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 12px;
 }
 
@@ -174,10 +217,38 @@
 
 @media (max-width: 1024px) {
 
-  
+  .swiper-pagination {
+    margin-bottom: 64px;
+  }
 
   .repo-info {
     margin-top: 0;
+  }
+
+  .repo-images .aloha-desktop {
+    margin-left: 32px;
+  }
+
+  .repo-images .aloha-tablet {
+    margin-left: -128px;
+  }
+  
+  .repo-images .aloha-mobile {
+    margin-left: -192px;
+    margin-top: 128px;
+  }
+
+  .repo-images .insta-desktop {
+    margin-left: 32px;
+  }
+  
+  .repo-images .insta-tablet {
+    margin-left: -128px;
+  }
+  
+  .repo-images .insta-mobile {
+    margin-left: -192px;
+    margin-top: 128px;
   }
 
   .projects .title {
@@ -196,6 +267,10 @@
     max-width: 768px;
   }
 
+  .projects-container {
+    margin-top: -96px;
+  }
+
   .repo-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -205,8 +280,70 @@
 
 @media (max-width: 768px) {
 
+  .projects .title {
+    padding-top: 32px;
+  } 
+
+  .swiper-slide {
+    align-items: flex-start;
+  }
+
+  .swiper-button-next:after {
+    margin-top: -256px;
+  }
+
+  .swiper-button-prev:after {
+    margin-top: -256px;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 208px;
+  }
+
   .repo-info {
     display: none;
+  }
+
+  .repo-images .desktop {
+    width: 80%;
+    margin-left: 48px;
+  }
+
+  .repo-images .aloha-desktop {
+    width: 80%;
+  }
+
+  .repo-images .aloha-tablet {
+    width: 35%;
+    margin-left: -128px;
+    margin-top: 64px;
+  }
+
+  .repo-images .aloha-mobile {
+    width: 20%;
+    margin-left: -160px;
+    margin-top: 112px;
+  }
+
+  .repo-images .insta-desktop {
+    width: 80%;
+  }
+
+  .repo-images .insta-tablet {
+    width: 35%;
+    margin-left: -128px;
+    margin-top: 64px;  
+  }
+
+  .repo-images .insta-mobile {
+    width: 20%;
+    margin-left: -160px;
+    margin-top: 112px;
+  }
+
+  .projects-container {
+    padding-top: 32px;
+    margin-top: -224px;
   }
 
   .projects .title {

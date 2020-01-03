@@ -43,7 +43,7 @@ const Carousel = () => {
           <img
             src="/Harp-Desktop.png"
             alt="Harp and Hawthorne desktop version"
-            style={{ width: "100%", marginLeft: "96px" }}
+            className="desktop"
           />
         </div>
         
@@ -58,19 +58,17 @@ const Carousel = () => {
           <img
             src="/Aloha-desktop.png"
             alt="Aloha desktop version"
-            style={{ width: "100%" }}
+            className="aloha-desktop"
           />
           <img
             src="/Aloha-tablet.png"
             alt="Aloha tablet version"
             className="aloha-tablet"
-            style={{ width: "40%", marginLeft: "-224px", marginTop: "96px" }}
           />
           <img
             src="/Aloha-mobile.png"
             alt="Aloha mobile version"
             className="aloha-mobile"
-            style={{ width: "25%", marginLeft: "-384px", marginTop: "160px" }}
           />
         </div>
 
@@ -85,7 +83,7 @@ const Carousel = () => {
           <img
             src="/Pong-desktop.png"
             alt="Pong desktop version"
-            style={{ width: "100%", marginLeft: "96px" }}
+            className="desktop"
           />
         </div>
         <div className="repo-info">
@@ -99,19 +97,17 @@ const Carousel = () => {
           <img
             src="/Insta-desktop.png"
             alt="InstaNews desktop version"
-            style={{ width: "100%" }}
+            className="insta-desktop"
           />
           <img
             src="/Insta-tablet.png"
             alt="InstaNews tablet version"
             className="insta-tablet"
-            style={{ width: "40%", marginLeft: "-224px", marginTop: "96px" }}
           />
           <img
             src="/Insta-mobile.png"
             alt="InstaNews mobile version"
             className="insta-mobile"
-            style={{ width: "25%", marginLeft: "-376px", marginTop: "160px" }}
           />
         </div>
 
@@ -126,7 +122,7 @@ const Carousel = () => {
           <img
             src="/Inhabitent-desktop.png"
             alt="Inhabitent desktop version"
-            style={{ width: "100%", marginLeft: "96px" }}
+            className="desktop"
           />
         </div>
         <div className="repo-info">
@@ -140,7 +136,7 @@ const Carousel = () => {
           <img
             src="/QOD-desktop.png"
             alt="Quotes On Dev desktop version"
-            style={{ width: "100%", marginLeft: "96px" }}
+            className="desktop"
           />
         </div>
 
