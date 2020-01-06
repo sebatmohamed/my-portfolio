@@ -6,7 +6,7 @@ const BackgroundImage = () => {
         filter: "blur(16px)",
         overflow: "hidden",
         position: "absolute",
-        minWidth: "100%",
+        maxWidth: "100%",
         transform: "translateX(-50%) translateY(-50%)",
         minHeight: "100%",
         zIndex: -1
