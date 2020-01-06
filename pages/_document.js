@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet"/>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155440032-1"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -18,6 +17,7 @@ class MyDocument extends Document {
           gtag('js', new Date());
           gtag('config', 'UA-155440032-1');
         </script>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet"/>
         </Head> 
         <body>
           <Main />
