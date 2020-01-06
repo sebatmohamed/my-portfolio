@@ -18,8 +18,6 @@ class MyDocument extends Document {
           gtag('js', new Date());
           gtag('config', 'UA-155440032-1');
         </script>
-
-
         </Head> 
         <body>
           <Main />
