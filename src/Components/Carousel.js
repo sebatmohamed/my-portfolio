@@ -41,7 +41,7 @@ const Carousel = () => {
       <div>
         <div className="repo-images">
           <img
-            src="/Harp-desktop.jpg"
+            src="/Harp-desktop.png"
             alt="Harp and Hawthorne desktop version"
             className="desktop"
           />
@@ -56,17 +56,17 @@ const Carousel = () => {
       <div>
         <div className="repo-images">
           <img
-            src="/Aloha-desktop.jpg"
+            src="/Aloha-desktop.png"
             alt="Aloha desktop version"
             className="aloha-desktop"
           />
           <img
-            src="/Aloha-tablet.jpg"
+            src="/Aloha-tablet.png"
             alt="Aloha tablet version"
             className="aloha-tablet"
           />
           <img
-            src="/Aloha-mobile.jpg"
+            src="/Aloha-mobile.png"
             alt="Aloha mobile version"
             className="aloha-mobile"
           />
@@ -81,7 +81,7 @@ const Carousel = () => {
       <div>
         <div className="repo-images">
           <img
-            src="/Pong-desktop.jpg"
+            src="/Pong-desktop.png"
             alt="Pong desktop version"
             className="desktop"
           />
@@ -95,17 +95,17 @@ const Carousel = () => {
       <div>
         <div className="repo-images">
           <img
-            src="/Insta-desktop.jpg"
+            src="/Insta-desktop.png"
             alt="InstaNews desktop version"
             className="insta-desktop"
           />
           <img
-            src="/Insta-tablet.jpg"
+            src="/Insta-tablet.png"
             alt="InstaNews tablet version"
             className="insta-tablet"
           />
           <img
-            src="/Insta-mobile.jpg"
+            src="/Insta-mobile.png"
             alt="InstaNews mobile version"
             className="insta-mobile"
           />
@@ -120,7 +120,7 @@ const Carousel = () => {
       <div>
         <div className="repo-images">
           <img
-            src="/Inhabitent-desktop.jpg"
+            src="/Inhabitent-desktop.png"
             alt="Inhabitent desktop version"
             className="desktop"
           />
@@ -134,7 +134,7 @@ const Carousel = () => {
       <div>
         <div className="repo-images">
           <img
-            src="/QOD-desktop.jpg"
+            src="/QOD-desktop.png"
             alt="Quotes On Dev desktop version"
             className="desktop"
           />
