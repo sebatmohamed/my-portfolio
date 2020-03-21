@@ -1,16 +1,13 @@
 import "../../css/contact.css";
-import BackgroundImage from "./BackgroundImage";
 
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-import { FaMobileAlt } from "react-icons/fa";
 import { FaCodepen } from "react-icons/fa";
 
 const ContactPage = () => {
   return (
     <div className="contact">
-      <BackgroundImage />
 
       <div className="contact-container">
         <h2>

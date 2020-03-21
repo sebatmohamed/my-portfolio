@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-top: 144px;
   width: 100%;
-  background: transparent;
 }
 
 .main {
@@ -18,6 +16,18 @@
   width: 100%;
 }
 
+.image {
+  padding-top: 64px;
+  padding-bottom: 16px;
+}
+
+.my-pic {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 2px solid white;
+}
+
 .major {
   display: flex;
   text-align: center;
@@ -25,6 +35,7 @@
   flex-direction: column;
   flex: 1;
   margin: 0 auto;
+  padding-bottom: 16px;
 }
 
 .Typewriter__wrapper {
@@ -45,19 +56,9 @@
   display: none;
 }
 
-.minor {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  font-size: 32px;
-  color: #eeeeee;
-  font-weight: 500;
-  text-shadow: 0 0 8px black;
-  padding: 32px 0px 48px 0px;
-}
-
 .arrow:hover {
-  fill: #c0362c;
+  opacity: 0.5;
+  transform: scale(1.25);
 }
 
 .about {
@@ -163,19 +164,6 @@ input:focus {
   margin-top: -40px;
 }
 
-.right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  animation: fadein 2s;
-}
-
-.my-pic {
-  width: 90%;
-  object-fit: cover;
-}
-
 .skills {
   display: flex;
   flex-direction: column;
@@ -241,6 +229,14 @@ input:focus {
 /* Tablet Version */
 
 @media (max-width: 1024px) {
+
+  .image {
+    padding-bottom: 32px;
+  }
+
+  .major {
+    padding-bottom: 32px;
+  }
 
   .Typewriter__wrapper {
     font-size: 48px;

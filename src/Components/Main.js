@@ -1,5 +1,4 @@
 import "../../css/home.css";
-import BackgroundImage from "./BackgroundImage";
 import Typewriter from "typewriter-effect";
 import{ IoIosArrowDropdown } from "react-icons/io";
 import { FaHtml5 } from "react-icons/fa";
@@ -45,9 +44,13 @@ class Main extends React.Component {
 
     return (
       <div className="container">
-        <BackgroundImage />
 
         <div className="main">
+
+          <div className="image">
+            <img className="my-pic" src="/photo2.jpeg" />
+          </div>
+
           <div className="major">
             <Typewriter
               options={{
@@ -64,10 +67,6 @@ class Main extends React.Component {
                 loop: true
               }}
             />
-          </div>
-
-          <div className="minor">
-            <p>Check out some of my incredible work and let's connect!</p>
           </div>
 
           <div>
@@ -114,10 +113,6 @@ class Main extends React.Component {
               />
               <p>McMaster University BSc Jun 2018</p>
             </div>
-          </div>
-
-          <div className="right">
-            <img className="my-pic" src="/peace.jpeg" />
           </div>
         </div>
 
