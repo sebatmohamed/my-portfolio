@@ -9,10 +9,8 @@ class Header extends React.Component {
     this.state = {
       isActive: false,
       isClosed: true,
-      isTop: true
     };
     this.handleClick = this.handleClick.bind(this);
-    this.onScroll = this.onScroll.bind(this);
   }
 
   handleClick() {
@@ -20,30 +18,17 @@ class Header extends React.Component {
     this.setState({ isClosed: !this.state.isClosed})
   }
 
-  componentDidMount() {
-    document.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 550;
-      if (isTop !== this.state.isTop) {
-        this.onScroll(isTop);
-      }
-    });
-  }
-
-    onScroll(isTop) {
-    this.setState({ isTop });
-  }
-
   render() {
     return (
-      <div className={this.state.isTop ? 'header' : 'header-scroll'}>
+      <div className='header'>
         
-        <div className={this.state.isTop ? 'logo' : 'logo-scroll'}>
+        <div className='logo'>
           <Link href="/">
             <a>Sebat Mohamed</a>
           </Link>
         </div>
 
-        <div className={this.state.isTop ? 'nav' : 'nav-scroll'}>
+        <div className='nav'>
           <Link href="/projects">
             <a className="page">
               <span>Projects</span>
@@ -65,7 +50,7 @@ class Header extends React.Component {
 
         {this.state.isActive 
           ?  
-          <div className="new-nav">
+          <div className='new-nav'>
             <a className="nav-item" href="/projects">Projects</a>
             <a className="nav-item" href="/resume">Resume</a>
             <a className="nav-item" href="/contact">Contact</a>
@@ -75,7 +60,7 @@ class Header extends React.Component {
 
         {this.state.isClosed
         ?
-        <div className="menu">
+        <div className='menu'>
           <GiHamburgerMenu
             style={{ width: "1.5em", height: "1.5em" }}
             onClick={this.handleClick}

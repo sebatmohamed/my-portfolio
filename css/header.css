@@ -4,27 +4,9 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-}
-
-.header-scroll {
-  top: 0;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  background-color: #ffffff;
-  transition: 0.5s ease-in ;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  padding-left: 32px;
-}
-
-.logo-scroll {
   display: flex;
   align-items: center;
   padding-left: 32px;
@@ -39,21 +21,7 @@
   text-transform: uppercase;
 }
 
-.logo-scroll a {
-  display: flex;
-  transition: all 0.25s ease;
-  align-items: center;
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .logo a:hover {
-  opacity: 0.5;
-  transform: scale(1.25);
-}
-
-.logo-scroll a:hover {
   opacity: 0.5;
   transform: scale(1.25);
 }
@@ -85,12 +53,6 @@
   padding-right: 32px;
 }
 
-.nav-scroll {
-  display: flex;
-  align-items: center;
-  padding-right: 32px;
-}
-
 .nav .page {
   color: #ffffff;
   height: 16px;
@@ -102,23 +64,7 @@
   padding-right: 32px;
 }
 
-.nav-scroll .page {
-  color: black;
-  height: 16px;
-  outline: none;
-  font-size: 14px;
-  font-weight: bold;
-  transition: all 0.25s ease;
-  text-transform: uppercase;
-  padding-right: 32px;
-}
-
 .nav a:hover {
-  transform: scale(1.25);
-  opacity: 0.5;
-}
-
-.nav-scroll a:hover {
   transform: scale(1.25);
   opacity: 0.5;
 }
@@ -165,6 +111,7 @@ Version
   }
 
   .nav-item:hover {
+    opacity: 0.5;
     transform: scale(1.25);
   }
 
@@ -174,6 +121,7 @@ Version
   }
 
   .menu:hover {
+    opacity: 0.5;
     transform: scale(1.25);
   }
 
@@ -232,7 +180,8 @@ Version
     z-index: 99;
   }
 
-  .nav-item {
+  .nav-item:hover {
+    opacity: 0.5;
     transform: scale(1.25);
   }
 
@@ -242,6 +191,7 @@ Version
   }
 
   .menu:hover {
+    opacity: 0.5;
     transform: scale(1.25);
   }
 
