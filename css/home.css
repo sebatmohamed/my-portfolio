@@ -6,7 +6,7 @@
 }
 
 .main {
-  max-width: 1024px;
+  height: 635px;
   margin: auto;
   position: relative;
   text-align: center;
@@ -14,15 +14,20 @@
   flex-direction: column;
   flex: 1;
   width: 100%;
+  background-color: black;
+  padding-top: 32px;
 }
 
 .image {
-  padding-top: 64px;
-  padding-bottom: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .my-pic {
-  width: 50%;
+  width: 35%;
   object-fit: cover;
   border-radius: 25px;
   border: 2px solid white;
@@ -30,12 +35,11 @@
 
 .major {
   display: flex;
-  text-align: center;
-  justify-content: flex-end;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
   flex: 1;
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 
 .Typewriter__wrapper {
@@ -56,112 +60,13 @@
   display: none;
 }
 
+.arrow {
+  margin-bottom: 64px;
+}
+
 .arrow:hover {
   opacity: 0.5;
   transform: scale(1.25);
-}
-
-.about {
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1088px;
-  padding: 240px 16px 64px 16px;
-}
-
-.left {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 512px;
-  padding-top: 64px;
-}
-
-.form {
-  flex: 1;
-}
-
-.form h1 {
-  color: #ffffff;
-  font-weight: bold;
-  text-shadow: 0 0 8px black;
-  font-size: 32px;
-  padding-bottom: 32px;
-}
-
-.form-label {
-  margin-bottom: 16px;
-  font-size: 22px;
-  color: #ffffff;
-  font-weight: 500;
-  text-shadow: 0 0 6px black;
-}
-
-.form-label span {
-  color: #c0362c;
-}
-
-.form input {
-  display: block;
-  position: relative;
-  background: #efefef;
-  border: 2px solid #efefef;
-  border-radius: 8px;
-  caret-color: #c0362c;
-  font-size: 18px;
-  margin: 0;
-  outline: none;
-  padding: 8px 12px;
-  width: 256px;
-}
-
-input:hover {
-  background: white;
-  transition: ease 0.25s;
-}
-
-input:focus {
-  border: 2px solid #c0362c;
-  transition: ease 0.25s;
-  background: white;
-  color: #c0362c;
-}
-
-.sub {
-  color: #ffffff;
-  text-shadow: 0 0 6px black;
-  padding-bottom: 64px;
-}
-
-.sub .redlogo {
-  width: 50%;
-  object-fit: cover;
-  margin-left: -8px;
-  display: flex;
-}
-
-.sub .maclogo {
-  width: 40%;
-  object-fit: cover;
-  margin-left: -16px;
-  display: flex;
-}
-
-.sub h2 {
-  font-size: 32px;
-  padding-bottom: 32px;
-  font-weight: 700;
-  padding-top: 64px;
-}
-
-.sub p {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.sub p:nth-child(5) {
-  margin-top: -40px;
 }
 
 .skills {
@@ -169,14 +74,13 @@ input:focus {
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  padding: 0px 16px 96px 16px;
   max-width: 1088px;
+  padding-top: 32px;
 }
 
 .skills h1 {
-  color: #ffffff;
+  color: black;
   font-weight: bold;
-  text-shadow: 0 0 8px black;
   font-size: 32px;
   padding-bottom: 48px;
 }
@@ -200,9 +104,8 @@ input:focus {
 }
 
 .technologies-container h1 {
-  color: #ffffff;
+  color: black;
   font-weight: bold;
-  text-shadow: 0 0 8px black;
   font-size: 32px;
   padding-bottom: 48px;
 }
@@ -230,14 +133,6 @@ input:focus {
 
 @media (max-width: 1024px) {
 
-  .image {
-    padding-bottom: 32px;
-  }
-
-  .major {
-    padding-bottom: 32px;
-  }
-
   .Typewriter__wrapper {
     font-size: 48px;
     max-width: 512px;
@@ -248,12 +143,8 @@ input:focus {
     padding: 32px 32px 48px 32px;
   }
 
-  .about {
-    padding: 224px 32px 64px 32px;
-  }
-
   .skills {
-    padding: 0px 32px 96px 32px;
+    padding: 16px 32px 96px 32px;
   }
 
   .technologies-container {
@@ -274,38 +165,9 @@ input:focus {
     padding: 0 32px 48px 32px;
   }
 
-  .about {
-    display: block;
-    padding: 292px 32px 64px 32px;
-  }
-
-  .left {
-    padding-top: 32px;
-    text-align: center;
-  }
-
-  .form input {
-    margin: 0 auto;
-  }
-
-  .sub {
-    text-align: center;
-  }
-
-  .sub .redlogo {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-  }
-
-  .sub .maclogo {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-  }
-
   .skills {
     text-align: center;
+    padding-top: 16px;
   }
 
   .skills h1 {

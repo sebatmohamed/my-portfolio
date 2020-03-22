@@ -4,6 +4,7 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
+  background-color: black;
 }
 
 .logo {
@@ -117,7 +118,7 @@ Version
 
   .menu {
     display: flex;
-    z-index: 99;
+    z-index: 9999;
   }
 
   .menu:hover {

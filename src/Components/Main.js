@@ -15,16 +15,9 @@ class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      yourName: "",
       ref: React.createRef()
     };
-    this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleChange(event) {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
   }
 
   handleClick(event) {
@@ -78,45 +71,7 @@ class Main extends React.Component {
           </div>
         </div>
 
-        <div className="about">
-          <div className="left" ref={this.state.ref}>
-
-            <form className="form">
-              <h1>Welcome! My Name is Sebat Mohamed 🙂</h1>
-              <label className="form-label">
-                Tell me what your name is. Hello,{" "}
-                <span>{this.state.yourName}</span>
-              </label>
-
-              <input
-                type="text"
-                name="yourName"
-                placeholder="Type in your name"
-                value={this.state.yourName}
-                onChange={this.handleChange}
-                autoComplete="off"
-              />
-            </form>
-
-            <div className="sub">
-              <h2>Education:</h2>
-              <img
-                src="/redLogo.png"
-                alt="RED Academy logo"
-                className="redlogo"
-              />
-              <p>Diploma, Web Development Dec 2019</p>
-              <img
-                src="/macLogo.png"
-                alt="McMaster University logo"
-                className="maclogo"
-              />
-              <p>McMaster University BSc Jun 2018</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="skills">
+        <div className="skills" ref={this.state.ref}>
           <h1>Technical Skills</h1>
 
           <main className="languages">
