@@ -8,11 +8,15 @@ import { FaCodepen } from "react-icons/fa";
 const ContactPage = () => {
   return (
     <div className="contact">
+      <img 
+        src="/basketball.jpg" 
+        alt="picture of basketball net"
+        className="basketball" 
+      />
 
       <div className="contact-container">
         <h2>
-          Interested in working together? <br/> Get in touch with me to get the ball
-          rolling!
+        The ball is in your court. <br/> Interested in working together? Get in touch with me!
         </h2>
 
         <div className="contacts">

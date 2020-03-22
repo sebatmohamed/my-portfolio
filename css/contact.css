@@ -4,6 +4,18 @@
   flex: 1;
   padding: 32px;
   justify-content: space-between;
+  min-height: 308px;
+}
+
+.basketball {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  min-width: 110%;
+  min-height: 110%;
+  flex: 1;
 }
 
 .contact-container {
@@ -14,13 +26,13 @@
   width: 100%;
   max-width: 1152px;
   margin-top: 64px;
+  position: relative;
 }
 
 .contact-container h2 {
   text-align: center;
   color: #ffffff;
   font-weight: bold;
-  text-shadow: 0 0 8px black;
   font-size: 32px;
   padding-bottom: 64px;
 }
@@ -42,13 +54,13 @@
 }
 
 .contacts div a {
-  color: #c0362c;
+  color: #858585;
   width: 64px;
   height: 64px;
   display: inline-flex;
   outline: none;
   background: #ffffff;
-  box-shadow: 0 0 4px #c0362c;
+  box-shadow: 0 0 4px #858585;
   transition: all 0.25s ease;
   align-items: center;
   border-radius: 100%;
@@ -62,25 +74,29 @@
   height: 2em;
 }
 
+.contacts div a:hover {
+  transform: scale(1.25);
+  opacity: 0.5;
+}
+
 .contacts div p {
   display: flex;
   text-align: center;
   justify-content: center;
   color: #ffffff;
   font-weight: bold;
-  text-shadow: 0 0 8px black;
   font-size: 16px;
 }
 
 .copy {
   color: #ffffff;
+  font-weight: bold;
   width: 100%;
   height: 80px;
   position: absolute;
   display: flex;
   background: transparent;
   align-items: center;
-  text-shadow: 0 0 8px black;
   flex-direction: column;
   justify-content: center;
   bottom: 0;
@@ -94,10 +110,6 @@
   .contacts div {
     padding: 16px;
   }
-
-  /* .contacts div p {
-    display: none;
-  } */
 }
 
 /* Mobile Version */

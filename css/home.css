@@ -24,6 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadein 4s;
 }
 
 .my-pic {
@@ -32,6 +33,8 @@
   border-radius: 25px;
   border: 2px solid white;
 }
+
+
 
 .major {
   display: flex;
