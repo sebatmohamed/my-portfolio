@@ -28,16 +28,6 @@ class ProjectsPage extends React.Component {
       width: '512px',
     }
 
-    const code = {
-      width: '100%',
-      objectFit: 'cover',
-      position: 'absolute',
-      left: '0px',
-      top: '96px',
-      height: '576px',
-      filter: "blur(1px)",
-    }
-
     return (
       <div className="projects">
 

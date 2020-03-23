@@ -14,10 +14,9 @@
 }
 
 .projects .title h2 {
-  color: #ffffff;
+  color: #858585;
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 0 0 8px black;
 }
 
 .carousel {
@@ -106,16 +105,15 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  color: #ffffff;
+  color: black;
   font-size: 32px;
   font-weight: 700;
-  text-shadow: 0 0 8px black;
   animation: fadein 1s;
   margin-left: 80px;
 }
 
 .repo-info h1 {
-  color: #c0362c;
+  color: #858585;
   font-size: 32px;
 }
 
@@ -126,10 +124,6 @@
 
 .repo-info p a {
   color: #ffffff;
-}
-
-.repo-info p a span {
-  color: #c0362c;
 }
 
 .projects-container {
@@ -143,11 +137,17 @@
 
 .projects-container h1 {
   font-size: 24px;
+  color: black;
   padding: 32px 0;
 }
 
 .projects-container h1 a {
   color: #c0362c;
+  font-weight: bold;
+}
+
+.projects-container h1 a:hover {
+opacity: 0.5;
 }
 
 .repo-list {
@@ -168,7 +168,6 @@
   height: 100%;
   padding: 32px;
   text-align: center;
-  background: #ffffff;
   border-radius: 12px;
 }
 
@@ -184,23 +183,22 @@
 }
 
 .repo-container li span {
-  color: #c0362c;
+  color: #858585;
   font-weight: 700;
   font-size: 22px;
 }
 
 .repo-container .caption p span {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: 0 0 6px black;
+  color: black;
 }
 
 .repo-container .caption p a {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: 0 0 6px black;
+  color: #c0362c;
 }
 
+.repo-container .caption p a:hover {
+  opacity: 0.5;
+}
 /* Tablet Version */
 
 @media (max-width: 1024px) {

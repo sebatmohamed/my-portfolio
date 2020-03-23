@@ -49,7 +49,7 @@ const Carousel = () => {
         
         <div className="repo-info">
           <h1>Wordpress:</h1>
-          <p>A sophisticated, elegant client project. See live <a href="https://harpandhawthorne.com/" target="_blank"><span>website!</span></a></p>
+          <p>A sophisticated, elegant client project</p>
         </div>
       </div>
       
